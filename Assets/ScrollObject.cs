@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class ScrollObject : MonoBehaviour
@@ -21,5 +22,7 @@ public class ScrollObject : MonoBehaviour
         float diff = transform.position.x-endPosition;
         Vector3 restartPosotion=transform.position;
         restartPosotion.x=startPosition+diff;
+        transform.position=restartPosotion;
+        SendMessage("OnScrollEnd",SendMessageOptions.DontRequireReceiver);
     }
 }
