@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class AzarashiController : MonoBehaviour
 {
@@ -57,6 +57,8 @@ public class AzarashiController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision){
         if(isDead) return;
+
+        Camera.main.SendMessage("Clash");
 
         isDead = true;
     }

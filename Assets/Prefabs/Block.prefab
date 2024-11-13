@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5625293472489814480}
   - component: {fileID: 7284008092166646409}
+  - component: {fileID: 2901615807644626692}
   m_Layer: 0
   m_Name: ClearTrigger
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +78,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4}
   m_EdgeRadius: 0
+--- !u!114 &2901615807644626692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042757348617281460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cb00cd9516061459e72acf41261b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4884121079968201544
 GameObject:
   m_ObjectHideFlags: 0
